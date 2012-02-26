@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Test::Application.configure do
+=======
+ZWSystemTestow::Application.configure do
+>>>>>>> b10e89dbe75983e5a9fe6c7457bcb20154c20d11
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests

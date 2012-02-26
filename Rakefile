@@ -4,4 +4,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+<<<<<<< HEAD
 Test::Application.load_tasks
+=======
+ZWSystemTestow::Application.load_tasks
+>>>>>>> b10e89dbe75983e5a9fe6c7457bcb20154c20d11
