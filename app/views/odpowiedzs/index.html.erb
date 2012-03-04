@@ -1,0 +1,21 @@
+<h1>Listing odpowiedzs</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @odpowiedzs.each do |odpowiedz| %>
+  <tr>
+    <td><%= link_to 'Show', odpowiedz %></td>
+    <td><%= link_to 'Edit', edit_odpowiedz_path(odpowiedz) %></td>
+    <td><%= link_to 'Destroy', odpowiedz, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Odpowiedz', new_odpowiedz_path %>

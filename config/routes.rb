@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-Test::Application.routes.draw do
-=======
+
 ZWSystemTestow::Application.routes.draw do
->>>>>>> b10e89dbe75983e5a9fe6c7457bcb20154c20d11
+  resources :odpowiedzs
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
