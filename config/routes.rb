@@ -1,4 +1,6 @@
 ZWSystemTestow::Application.routes.draw do
+  resources :kurses
+
   resources :podejscies
 
   resources :kurs

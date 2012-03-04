@@ -11,13 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120304200444) do
+ActiveRecord::Schema.define(:version => 20120304232920) do
 
   create_table "dzials", :force => true do |t|
     t.string "nazwa"
   end
 
-  create_table "kurs", :force => true do |t|
+  create_table "kurs_tests", :force => true do |t|
+    t.integer  "kurs_id"
+    t.integer  "test_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "kurses", :force => true do |t|
     t.string   "nazwa"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -29,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20120304200444) do
     t.integer  "nr"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "pytanie_id"
   end
 
   create_table "podejscies", :force => true do |t|
@@ -37,6 +45,8 @@ ActiveRecord::Schema.define(:version => 20120304200444) do
     t.integer  "wynik"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+    t.integer  "test_id"
   end
 
   create_table "pytanies", :force => true do |t|
@@ -44,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20120304200444) do
     t.integer  "punkty"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "test_id"
   end
 
   create_table "tests", :force => true do |t|
@@ -54,6 +65,13 @@ ActiveRecord::Schema.define(:version => 20120304200444) do
     t.float    "prog"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "dzial_id"
+  end
+
+  create_table "user_kurses", :force => true do |t|
+    t.integer "user_id"
+    t.integer "kurs_id"
+    t.integer "realizacja"
   end
 
   create_table "users", :force => true do |t|

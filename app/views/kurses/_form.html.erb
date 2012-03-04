@@ -1,0 +1,17 @@
+<%= form_for(@kurs) do |f| %>
+  <% if @kurs.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kurs.errors.count, "error") %> prohibited this kurs from being saved:</h2>
+
+      <ul>
+      <% @kurs.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

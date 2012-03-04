@@ -5,3 +5,6 @@ require File.expand_path('../application', __FILE__)
 
 ZWSystemTestow::Application.initialize!
 
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.irregular 'kurs', 'kurses'
+end  
