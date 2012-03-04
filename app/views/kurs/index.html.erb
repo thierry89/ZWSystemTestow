@@ -1,0 +1,21 @@
+<h1>Listing kurs</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kurs.each do |kur| %>
+  <tr>
+    <td><%= link_to 'Show', kur %></td>
+    <td><%= link_to 'Edit', edit_kur_path(kur) %></td>
+    <td><%= link_to 'Destroy', kur, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kur', new_kur_path %>

@@ -1,0 +1,12 @@
+implementacja schematu bayz danych
+wstepna implementacja widokow
+nested resources(odpowiedzi w pytaniach, pytania w testach)
+
+
+
+partials
+
+
+// -- used gems
+sorcery - athentication
+http://railscasts.com/episodes/283-authentication-with-sorcery?autoplay=true

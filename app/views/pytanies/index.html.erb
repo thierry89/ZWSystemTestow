@@ -1,0 +1,21 @@
+<h1>Listing pytanies</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pytanies.each do |pytany| %>
+  <tr>
+    <td><%= link_to 'Show', pytany %></td>
+    <td><%= link_to 'Edit', edit_pytany_path(pytany) %></td>
+    <td><%= link_to 'Destroy', pytany, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pytanie', new_pytany_path %>

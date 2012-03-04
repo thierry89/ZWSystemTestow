@@ -1,0 +1,2 @@
+module KursHelper
+end
