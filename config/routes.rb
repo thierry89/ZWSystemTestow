@@ -14,6 +14,9 @@ ZWSystemTestow::Application.routes.draw do
 
   resources :odpowiedzs
 
+  resources :users
+  resources :sessions
+
 # The priority is based upon order of creation:
 # first created -> highest priority.
 

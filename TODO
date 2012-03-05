@@ -8,5 +8,7 @@ partials
 
 
 // -- used gems
-sorcery - athentication
+sorcery - authentication
 http://railscasts.com/episodes/283-authentication-with-sorcery?autoplay=true
+
+
